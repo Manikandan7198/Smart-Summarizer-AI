@@ -1,0 +1,231 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.heading {
+    font-size: 45px;
+}
+
+.textBoxStyle {
+    width: 95%;
+    height: 1.5rem;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 1px solid #145289;
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #0c3562;
+}
+
+.textBoxStyle:focus {
+    outline: none;
+    border-color: #20a3f5;
+    color: #ffffff;
+}
+
+.textBoxStyle:focus::placeholder {
+    color: #aaa;
+}
+
+.loginButton {
+    width: 100%;
+    padding: 15px;
+    background-color: #005083;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    box-shadow: 2px 2px 2px 2px #254889;
+    font-family: Poppins;
+}
+
+.loginButton:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.login-container {
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 2px solid #1e72b9;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    box-shadow: 1px 1px 1px 1px #254889;
+}
+
+.text-danger {
+    color: #ffffff;
+    font-size: 14px
+}
+
+.smart-heading {
+    color: #ffffff;
+    position: absolute;
+    left: 230px;
+    top: 25%;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 45px;
+}
+
+.smart-subheading {
+    color: #6faadf;
+    font-family: 'Inter', sans-serif !important;
+    position: absolute;
+    left: 150px;
+    top: 48%;
+    width: 500px;
+    font-size: 16px;
+}
+
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .textBoxStyle,
+    .loginButton {
+        font-size: 0.9rem;
+    }
+
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .heading {
+        font-size: 36px;
+        left: 150px !important;
+    }
+
+    .login-container {
+        left: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 28px;
+        left: 100px !important;
+        top: 20% !important;
+    }
+
+    .login-container {
+        left: 50%;
+        top: 60%;
+        width: 80%;
+    }
+
+    .textBoxStyle,
+    .loginButton {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 22px;
+        left: 20px !important;
+        top: 15% !important;
+        width: 90%;
+    }
+
+    .login-container {
+        width: 90%;
+        left: 50%;
+        top: 65%;
+        padding: 1.2rem;
+    }
+
+    .textBoxStyle,
+    .loginButton {
+        font-size: 0.85rem;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        right: 10px;
+        top: 10px;
+    }
+
+    .text-danger {
+        font-size: 12px;
+    }
+}
+
+.smart-heading {
+    color: #ffffff;
+    position: absolute;
+    left: 230px;
+    /* top: 20%; */
+    font-family: "Share Tech";
+    font-size: 45px;
+}
+
+.smart-heading__features p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.text-error {
+  color: red;
+  font-size: 14px;
+  text-align: left;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+    .smart-heading {
+        left: 80px;
+        top: 20%; 
+        font-size: 28px;
+    }
+
+    .smart-subheading {
+        left: 50px;
+        top: 40%;
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .smart-heading {
+        left: 20px;
+        top: 15%;
+        font-size: 22px;
+    }
+
+    .smart-subheading {
+        left: 20px;
+        top: 35%;
+        width: 90%;
+        font-size: 12px;
+    }
+}

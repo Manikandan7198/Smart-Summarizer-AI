@@ -1,0 +1,23 @@
+digraph {
+	n0 [label="Begin Organization API process" shape=circle]
+	n1 [label="Retrieve all Organizations" shape=rectangle]
+	n0 -> n1
+	n2 [label="Retrieve an Organization by ID" shape=rectangle]
+	n1 -> n2
+	n3 [label="Retrieve an Organization by Name" shape=rectangle]
+	n2 -> n3
+	n4 [label="Insert a new Organization" shape=rectangle]
+	n3 -> n4
+	n5 [label="Update an existing Organization" shape=rectangle]
+	n4 -> n5
+	n6 [label="Delete an Organization by ID" shape=rectangle]
+	n5 -> n6
+	n7 [label="Download analytics data in CSV format" shape=rectangle]
+	n6 -> n7
+	n8 [label="Retrieve analytics data" shape=rectangle]
+	n7 -> n8
+	n9 [label="Retrieve date-filtered analytics data" shape=rectangle]
+	n8 -> n9
+	n10 [label="End Organization API process" shape=circle]
+	n9 -> n10
+}
